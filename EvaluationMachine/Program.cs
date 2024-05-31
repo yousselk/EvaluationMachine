@@ -25,9 +25,13 @@ static double[] Calcul(double[] THarm, int a)
     return THarm;
 }
 
+TAffichage(NHarm());
 
-double[] t = NHarm ();
-for (int i = 0; i < t.Length; i++)
+static void TAffichage(double[] THarm) 
 {
-    Console.WriteLine($"{t[i]:F2}");
+    Console.WriteLine("Le tableau contient : ");
+    for (int i = 0; i < THarm.Length; i++)
+    {
+        Console.WriteLine($"{THarm[i]:F2}");
+    }
 }
