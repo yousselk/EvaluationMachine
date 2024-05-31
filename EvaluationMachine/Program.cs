@@ -3,7 +3,12 @@
 
 static double[] NHarm ()
 {
+    Console.WriteLine("Veuillez rentrer le nombre d'éléments harmoniques");
     int a = Convert.ToInt32(Console.ReadLine());
+    if (a < 1)
+    {
+        throw new ArgumentException("Le nombre à rentrer doit être strictement positif");
+    }
     double[] THarm = new double[a];
 
     THarm = Calcul(THarm, a);
