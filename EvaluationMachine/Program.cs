@@ -4,8 +4,16 @@
 static double[] NHarm ()
 {
     int a = Convert.ToInt32(Console.ReadLine());
-    double s = 0,n = 0;
     double[] THarm = new double[a];
+
+    THarm = Calcul(THarm, a);
+
+    return THarm;
+}
+
+static double[] Calcul(double[] THarm, int a)
+{
+    double s = 0, n = 0;
 
     for (int i = 0; i < a; i++)
     {
@@ -16,6 +24,7 @@ static double[] NHarm ()
 
     return THarm;
 }
+
 
 double[] t = NHarm ();
 for (int i = 0; i < t.Length; i++)
